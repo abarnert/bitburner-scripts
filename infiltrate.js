@@ -108,7 +108,7 @@ const infiltrationGames = [
 		},
 	},
 	{
-		name: "slash when his guard is down",
+		name: "attack when his guard is down",
 		init: function (screen) {
 			state.game.data = "wait";
 		},
@@ -122,7 +122,7 @@ const infiltrationGames = [
 
 			// Attack in next frame - instant attack sometimes
 			// ends in failure.
-			if ('wait' === state.game.data && -1 !== data.indexOf("ATTACKING!")) {
+			if ('wait' === state.game.data && (data.indexOf("Preparing?") !== -1)) {
 				state.game.data = "attack";
 			}
 		},
@@ -153,6 +153,7 @@ const infiltrationGames = [
 				"dynamic",
 				"loyal",
 				"based",
+				"straightforward",
 			];
 			const word = getLines(getEl(screen, "h5"))[1];
 
@@ -341,7 +342,7 @@ const infiltrationGames = [
 	{
 		name: "cut the wires with the following properties",
 		init: function (screen) {
-			let numberHack = ["1","2","3","4","5","6","7","8","9"];
+			let numberHack = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 			const colors = {
 				red: "red",
 				white: "white",
@@ -380,7 +381,7 @@ const infiltrationGames = [
 						index += 1;
 						continue;
 					}
-					wireColor[color].push(j+1);
+					wireColor[color].push(j + 1);
 					index += 1;
 				}
 			}
@@ -417,7 +418,7 @@ const infiltrationGames = [
 			if (!wire) {
 				return;
 			}
-			for (let i=0;i<wire.length;i++) {
+			for (let i = 0; i < wire.length; i++) {
 				pressKey(wire[i].toString());
 			}
 		},
