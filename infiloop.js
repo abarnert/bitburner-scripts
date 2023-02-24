@@ -1,6 +1,6 @@
 import {
     autoRetry
-} from '/alain/helpers.js'
+} from './helpers.js'
 
 let wnd
 let doc
@@ -47,10 +47,10 @@ const companies = {
     'Bachman & Associates': 'Aevum',
     'Clarke Incorporated': 'Aevum',
     'ECorp': 'Aevum',
-    'Fulcum Technologies': 'Aevum',
+    'Fulcrum Technologies': 'Aevum',
     'Galactic Cybersystems': 'Aevum',
     'NetLink Technologies': 'Aevum',
-    'Aevum Police Headquarter': 'Aevum',
+    'Aevum Police Headquarters': 'Aevum',
     'Rho Construction': 'Aevum',
     'Watchdog Security': 'Aevum',
     'KuaiGong International': 'Chongqing',
@@ -75,7 +75,7 @@ const companies = {
     'Helios Labs': 'Volhaven',
     'LexoCorp': 'Volhaven',
     'NWO': 'Volhaven', // largest target (level 50)
-    'OmniTek Incorporation': 'Volhaven',
+    'OmniTek Incorporated': 'Volhaven',
     'Omnia Cybersystems': 'Volhaven',
     'SysCore Securities': 'Volhaven',
 }
