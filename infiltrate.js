@@ -342,7 +342,7 @@ const infiltrationGames = [
 	{
 		name: "cut the wires with the following properties",
 		init: function (screen) {
-			let numberHack = ["1","2","3","4","5","6","7","8","9"];
+			let numberHack = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 			const colors = {
 				red: "red",
 				white: "white",
@@ -381,7 +381,7 @@ const infiltrationGames = [
 						index += 1;
 						continue;
 					}
-					wireColor[color].push(j+1);
+					wireColor[color].push(j + 1);
 					index += 1;
 				}
 			}
@@ -418,7 +418,7 @@ const infiltrationGames = [
 			if (!wire) {
 				return;
 			}
-			for (let i=0;i<wire.length;i++) {
+			for (let i = 0; i < wire.length; i++) {
 				pressKey(wire[i].toString());
 			}
 		},
